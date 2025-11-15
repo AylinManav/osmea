@@ -26,6 +26,7 @@ import 'package:osmea_components/src/components/expanded/expanded.dart';
 import 'package:osmea_components/src/components/flexible/flexible.dart';
 import 'package:osmea_components/src/components/padding/padding.dart';
 import 'package:osmea_components/src/components/positioned/positioned.dart';
+import 'package:osmea_components/src/components/rating_bar/rating_bar.dart';
 import 'package:osmea_components/src/components/progress/progress.dart';
 import 'package:osmea_components/src/components/rich_text/rich_text.dart';
 import 'package:osmea_components/src/components/row/row.dart';
@@ -431,6 +432,45 @@ class OsmeaComponents {
       customTheme: customTheme,
       padding: padding,
       child: child,
+    );
+  }
+
+  /// ⭐ **OSMEA Rating Bar** - A simple rating bar component
+  ///
+  /// Creates a rating bar component with support for:
+  /// - Custom max rating
+  /// - Initial rating
+  /// - Custom size and color
+  ///
+  /// Example:
+  /// ```dart
+  /// OsmeaComponents.ratingBar(
+  ///   maxRating: 5,
+  ///   initialRating: 3,
+  ///   onRatingChanged: (rating) => print('New rating: $rating'),
+  /// )
+  /// ```
+  static Widget ratingBar({
+    Key? key,
+    int maxRating = 5,
+    required ValueChanged<double> onRatingChanged,
+    double initialRating = 0.0,
+    double size = 40,
+    Color color = Colors.amber,
+    IconData filledIcon = Icons.star,
+    IconData halfFilledIcon = Icons.star_half,
+    IconData emptyIcon = Icons.star_border,
+  }) {
+    return OsmeaRatingBar(
+      key: key,
+      maxRating: maxRating,
+      onRatingChanged: onRatingChanged,
+      rating: initialRating,
+      size: size,
+      color: color,
+      filledIcon: filledIcon,
+      halfFilledIcon: halfFilledIcon,
+      emptyIcon: emptyIcon,
     );
   }
 
