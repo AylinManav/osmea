@@ -300,6 +300,7 @@ class _ModernComponentsScreenState extends State<ModernComponentsScreen>
               'Snackbar',
               'Loading',
               'Progress',
+              'Rating',
               'Sound Dialog',
               'Badge',
               'Counter',
@@ -474,6 +475,7 @@ class _ModernComponentsScreenState extends State<ModernComponentsScreen>
 
   String _getComponentDescription(String componentName) {
     final descriptions = {
+    'Rating': 'Interactive star rating component with half-star support',
       'Align': 'Position widgets with precision',
       'AppBar': 'Top navigation and actions',
       'Avatar': 'User profile representation',
