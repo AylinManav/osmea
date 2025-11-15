@@ -107,6 +107,8 @@ export 'src/components/collapse/cubit/collapse_cubit.dart';
 export 'src/components/collapse/cubit/collapse_state.dart';
 export 'src/components/sound_dialog/cubit/sound_dialog_cubit.dart';
 export 'src/components/sound_dialog/cubit/sound_dialog_state.dart';
+export 'src/components/rating_bar/cubit/rating_bar_cubit.dart';
+export 'src/components/rating_bar/cubit/rating_bar_state.dart';
 
 // 🌀 Loading
 export 'src/utils/loading_extensions.dart';
