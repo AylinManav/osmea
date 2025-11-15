@@ -58,6 +58,7 @@ import '../components/application_share_helper_example.dart';
 import '../components/file_download_helper_example.dart';
 import '../components/sound_dialog_example.dart';
 import '../components/location_picker_example.dart';
+import '../components/rating_bar_example.dart';
 
 final List<Map<String, dynamic>> components = [
   {
@@ -224,6 +225,11 @@ final List<Map<String, dynamic>> components = [
     'title': 'Progress',
     'icon': Icons.trending_up_outlined,
     'route': () => const ProgressExample(),
+  },
+  {
+    'title': 'Rating',
+    'icon': Icons.star_outline,
+    'route': () => const RatingBarExample(),
   },
   {
     'title': 'RadioButton',
